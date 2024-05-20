@@ -1,12 +1,16 @@
-function login() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
-    
-    if (email === 'login@login.com' && password === '1234567') {
-        alert('Login bem-sucedido!');
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
+
+    if (usuario === "login@login.com" && senha === "123") {
+        var mensagemErro = document.getElementById("mensagemErro");
+        mensagemErro.textContent = "Login feito com sucesso!";
+        mensagemErro.style.color = "green";
     } else {
-        errorMessage.textContent = 'Email ou senha incorretos!';
-        errorMessage.classList.add('show');
+        var mensagemErro = document.getElementById("mensagemErro");
+        mensagemErro.textContent = "Usuário ou senha incorretos. Por favor, tente novamente.";
+        mensagemErro.style.color = "yellow";
     }
-}
+});

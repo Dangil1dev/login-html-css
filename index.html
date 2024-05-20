@@ -3,38 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/loginstyle.css">
-    <script src="scripts/loginScript.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Puxando icones-->
-
     <title>Tela de Login</title>
-
+    <link rel="stylesheet" href="styles/loginstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Puxando icones-->
+    
 </head>
 <body>
-    <div class="wrapper">
-        <form action="">
+    <div class="wrapper">   
+        <form id="loginForm" action="#">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" name="" placeholder="Usuario" id="usuario" required>
-                <i class='bx bx-user' ></i>
+                <input type="text" name="usuario" placeholder="Usuário" id="usuario" required>
+                <i class='bx bx-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Senha" id="senha" required>
+                <input type="password" name="senha" placeholder="Senha" id="senha" required>
                 <i class='bx bx-lock'></i>
             </div>
-
             <div class="lembrar">
-                <label><input type="checkbox">Lembrar de min</label>
+                <label><input type="checkbox">Lembrar de mim</label>
                 <a href="#">Esqueceu a senha?</a>
             </div>
-
             <button type="submit" class="btn">Login</button>
-
             <div class="registro-link">
                 <p>Não tem conta? <a href="#">Registre-se</a></p>
             </div>
+            <div id="mensagemErro"></div>
         </form>
     </div>
+    <script src="scripts/loginScript.js"></script>
 </body>
 </html>

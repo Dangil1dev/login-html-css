@@ -57,6 +57,7 @@ body {
 
 .input-box input::placeholder {
     color: #fff;
+    color: rgba(255, 255, 255, 0.5); /* deixa o "Usuário" transparente */
 }
 
 .input-box i {
@@ -115,4 +116,8 @@ body {
 
 .registro-link p a:hover {
     text-decoration: underline;
+}
+
+#mensagemErro {
+    text-align: center;
 }
