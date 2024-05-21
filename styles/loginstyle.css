@@ -8,6 +8,7 @@
 }
 
 body {
+    padding-top: 50px; /* Ajusta o espaço para o menu fixo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,4 +121,84 @@ body {
 
 #mensagemErro {
     text-align: center;
+}
+
+.login-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 20px; /*espacamento do "Não tem conta? Registre-se"*/
+}
+
+.login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+/*Menu*/
+
+/* Navbar styles */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9;
+}
+
+.nav-login a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-login a:hover {
+    background-color: #fff;
+    color: #000;
 }
