@@ -202,3 +202,20 @@ nav {
     background-color: #fff;
     color: #000;
 }
+
+
+/*Esqueci senha pag*/
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
